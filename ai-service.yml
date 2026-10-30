@@ -1,3 +1,3 @@
 # ai-service 설정
-# 서비스 골격을 만들 때 legacy-monolith/src/main/resources/application.yml에서 이 서비스에 필요한 항목만 옮깁니다.
+# 서비스 골격을 만들 때 hyeja-backend의 src/main/resources/application.yml에서 이 서비스에 필요한 항목만 옮깁니다.
 # 비밀값은 {cipher}로 암호화해 넣습니다.
