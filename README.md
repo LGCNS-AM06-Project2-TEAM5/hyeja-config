@@ -21,3 +21,7 @@
 - 이 저장소에 비밀값을 평문으로 넣지 않습니다.
 - DB 비밀번호, API 키 등은 Config Server의 `/encrypt`로 암호화한 뒤 `'{cipher}암호문'` 형식으로 넣습니다. (선택 요구사항 2번)
 - 설정을 바꾼 뒤 `POST /actuator/busrefresh`로 연결된 서비스에 한 번에 반영합니다. (선택 요구사항 1번)
+
+## 브랜치
+
+Config Server는 `main` 브랜치를 읽습니다. 이 저장소는 `main` 하나만 쓰고, 변경은 PR로 올립니다.
