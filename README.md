@@ -2,7 +2,7 @@
 
 혜자 MSA(5조)의 Spring Cloud Config Server가 읽는 설정 저장소입니다. (공통 요구사항 4번)
 
-- 서버: [hyeja-msa/infra/config-service](https://github.com/__ORG__/hyeja-msa/tree/develop/infra/config-service)
+- 서버: [hyeja-msa/infra/config-service](https://github.com/LGCNS-AM06-Project2-TEAM5/hyeja-msa/tree/develop/infra/config-service)
 - 조회 예: `GET http://localhost:8888/member-service/dev`
 
 ## 파일 규칙
