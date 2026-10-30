@@ -1,0 +1,5 @@
+# Docker Compose로 띄울 때 공통 설정 (컨테이너 이름으로 접속)
+eureka:
+  client:
+    service-url:
+      defaultZone: http://discovery-service:8761/eureka
