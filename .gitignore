@@ -1,0 +1,13 @@
+# Config Server가 그대로 읽어 가는 공개 저장소라 비밀값 파일은 올리지 않습니다.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.jks
+*.p12
+
+# 에디터·OS
+.idea/
+.vscode/
+.DS_Store
