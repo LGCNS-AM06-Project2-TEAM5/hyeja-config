@@ -11,4 +11,4 @@ management:
         include: health, info, refresh, busrefresh, prometheus
 hyeja:
   refresh:
-    message: before-refresh
+    message: after-refresh
