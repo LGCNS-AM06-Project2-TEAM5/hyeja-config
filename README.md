@@ -3,18 +3,20 @@
 혜자 MSA(5조)의 Spring Cloud Config Server가 읽는 설정 저장소입니다. (공통 요구사항 4번)
 
 - 서버: [hyeja-msa/infra/config-service](https://github.com/LGCNS-AM06-Project2-TEAM5/hyeja-msa/tree/develop/infra/config-service)
-- 조회 예: `GET http://localhost:8888/member-service/dev`
+- 조회 예: `GET https://localhost:8888/user-service/docker` (HTTPS만 제공하고, 서비스별 Basic 계정으로 자기 설정만 읽을 수 있습니다)
 
 ## 파일 규칙
 
 | 파일 | 적용 대상 |
 |---|---|
 | `application.yml` | 모든 서비스 공통 |
-| `application-{profile}.yml` | 모든 서비스의 해당 프로필 (`local`, `dev`, `prod`) |
+| `application-{profile}.yml` | 모든 서비스의 해당 프로필 (지금 있는 것은 Compose용 `docker`) |
 | `{서비스이름}.yml` | 해당 서비스 공통 |
 | `{서비스이름}-{profile}.yml` | 해당 서비스의 해당 프로필 |
 
 서비스 이름은 각 서비스의 `spring.application.name`과 같아야 합니다.
+
+지금 있는 서비스 파일: `gateway-service.yml`, `user-service.yml`, `policy-service.yml`, `engagement-service.yml`, `recommendation-service.yml`
 
 ## 비밀값
 
